@@ -4,68 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Europa</title>
+
+    <style>
+        .Coluna1 {
+            display: flex;            
+            align-items: flex-start;   
+            gap: 20px;                
+            margin-bottom: 30px;
+        }
+
+        .texto {
+            flex: 2; 
+        }
+
+        .imagem {
+            flex: 1;
+            text-align: center;
+        }
+
+        .imagem img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .Coluna2 {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .Coluna2 .texto {
+            flex: 2;
+        }
+
+        .Coluna2 .imagem {
+            flex: 1;
+            text-align: center;
+        }
+
+        .Coluna3 {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .Coluna3 .texto {
+            flex: 2;
+        }
+
+        .Coluna3 .imagem {
+            flex: 1;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Sobre</h1>
-    <br>
-    <a href = "Menu.html" > Menu </a>
+    <div class="Coluna1">
+        <div class="texto">
+        <h1>Sobre</h1>
+        <br>
+        <a href = "Menu.html" > Menu </a>
 
-    <h2>Europa</h2>
+        <h2>Europa</h2>
 
-    <p>Europa é um dos seis continentes do mundo, localizado a oeste da Ásia e ao norte da África. O continente é composto 
-        por 50 países e possui o maior bloco econômico do mundo.
-    </p>
+        <p>     Europa é um dos seis continentes do mundo, localizado a oeste da Ásia e ao norte da África. O continente é composto 
+            por 50 países e possui o maior bloco econômico do mundo.
+        </p>
     
-    <p>Europa é um dos seis continentes do mundo, sendo em extensão territorial o segundo menor. O continente é banhado, ao 
-        norte, pelo Mar Ártico; ao sul, pelo Mar Mediterrânio e o Mar Negro; a oeste, pelo Oceano Atlântico; e, a leste, pelo 
-        Mar Cáspio. A Europa é também conhecida como o “Velho Mundo” e considerada o berço da cultura ocidental.
-    </p>
+        <p>     Europa é um dos seis continentes do mundo, sendo em extensão territorial o segundo menor. O continente é banhado, ao 
+            norte, pelo Mar Ártico; ao sul, pelo Mar Mediterrânio e o Mar Negro; a oeste, pelo Oceano Atlântico; e, a leste, pelo 
+            Mar Cáspio. A Europa é também conhecida como o “Velho Mundo” e considerada o berço da cultura ocidental.
+        </p>
 
-    <p>A Europa limita-se territorialmente com a Ásia, a leste, sendo considerada então um prolongamento da massa continental 
-        do continente asiático, formando, assim, a Eurásia (massa continental formada pela Europa e pela Ásia).
-    </p>
+        <p>     A Europa limita-se territorialmente com a Ásia, a leste, sendo considerada então um prolongamento da massa continental 
+            do continente asiático, formando, assim, a Eurásia (massa continental formada pela Europa e pela Ásia).
+        </p>
 
-    <p>Os dois continentes são separados pela cordilheira chamada Montes Urais. Devido ao seu contorno bastante irregular, o 
-        continente europeu apresenta, além de várias penínsulas e ilhas, muitos países com costa litorânea.
-    </p>
-
-    <h1> Imagens</h1>
-    <img src = "Img/Europa.jpg"  alt = "Continente: Europa">
-    <br>
-    <a href = "https://pt.dreamstime.com/mapa-pol?tico-do-continente-de-europa-isolado-no-branco-ilustra-o-vetor-etiquetas-nome-pa-s-image145357282"> Fonte: dreamstime</a>
-
-    <h3>Regiões da Europa</h3>
-
-    <p> O continente europeu possui características bastante heterogêneas quando analisado todo o seu território. Para facilitar
-        o estudo das áreas que o constituem, algumas classificações dividem-no em quatro regiões. Essas regiões foram estabelecidas 
-        segundo critérios de ordem espacial e econômica. São estas:
-    </p>
-
-    <ul>
-
-        <li> Europa Ocidental: é composta pelas nações banhadas pelo Oceano Atlântico, como Alemanha, Bélgica, França e Reino Unido, e também por países que possuem relação com o Ocidente.</li>
+        <p>     Os dois continentes são separados pela cordilheira chamada Montes Urais. Devido ao seu contorno bastante irregular, o 
+            continente europeu apresenta, além de várias penínsulas e ilhas, muitos países com costa litorânea.
+        </p>
+        </div>
+        <div class = imagem>
+        <h1> Imagens</h1>
+        <img src = "Img/Europa.jpg"  alt = "Continente: Europa">
         <br>
-        <li> Europa Meridional: é composta por nações banhadas pelo Mar Mediterrâneo situadas na Península Ibérica, como Espanha, Andorra, Grécia e Itália.</li>
+        <a href = "https://pt.dreamstime.com/mapa-pol?tico-do-continente-de-europa-isolado-no-branco-ilustra-o-vetor-etiquetas-nome-pa-s-image145357282"> Fonte: dreamstime</a>
+        </div>
+    </div>
+
+
+    <div class="Coluna2">
+        <div class="texto">
+        <h3>Regiões da Europa</h3>
+
+        <p>     O continente europeu possui características bastante heterogêneas quando analisado todo o seu território. Para facilitar
+            o estudo das áreas que o constituem, algumas classificações dividem-no em quatro regiões. Essas regiões foram estabelecidas 
+            segundo critérios de ordem espacial e econômica. São estas:
+        </p>
+
+        <ul>
+
+            <li> Europa Ocidental: é composta pelas nações banhadas pelo Oceano Atlântico, como Alemanha, Bélgica, França e Reino Unido, e também por países que possuem relação com o Ocidente.</li>
+            <br>
+            <li> Europa Meridional: é composta por nações banhadas pelo Mar Mediterrâneo situadas na Península Ibérica, como Espanha, Andorra, Grécia e Itália.</li>
+            <br>
+            <li> Europa Centro-Oriental: é composta pelos países que formam a ex-União Soviética e tornaram-se independentes, como Bósnia, Herzegovina, Kosovo, Moldávia, Macedônia do Norte, entre outros.</li>
+            <br>
+            <li> Europa Setentrional: é composta por países que se situam no extremo norte do continente, como os Países Nórdicos (Noruega, Dinamarca, Suécia, Finlândia e Islândia).</li>
+
+        </ul>
+        </div>
+        <div class="imagem">
+
+        <img src = "Img/Regiões_Europa.jpg" alt = "Regiões da Europa">
         <br>
-        <li> Europa Centro-Oriental: é composta pelos países que formam a ex-União Soviética e tornaram-se independentes, como Bósnia, Herzegovina, Kosovo, Moldávia, Macedônia do Norte, entre outros.</li>
+        <a href = "https://geographia.com.br/regionalizacao-do-continente-europeu/"> Fonte: Portal Geografia</a>
+        </div>
+    </div>
+
+    
+    <div class="Coluna3">
+        <div class="texto">
+        <h3>População</h3>
+        <p>Entre os seis continentes do mundo, a Europa é quarto no ranking de população, com mais de 740 milhões de habitantes.
+        </p>
+        <p>O continente é considerado o mais atrativo para migrantes vindos de todas as regiões do mundo, e, segundo relatório da Organização Internacional para Migrações, cerca de 70 milhões de pessoas na Europa vieram de outros locais.
+        </p>
+        <p>O país mais populoso da Europa é a Rússia, com um pouco mais de 144 milhões de habitantes, e o menos populoso é o Vaticano, com cerca de 800 habitantes.
+        </p>
+        </div>
+        <div class="imagem">
+    
+        <img src = "Img/PopulacaoEuropa.jpg" alt = "Populacao da Europa">
         <br>
-        <li> Europa Setentrional: é composta por países que se situam no extremo norte do continente, como os Países Nórdicos (Noruega, Dinamarca, Suécia, Finlândia e Islândia).</li>
+        <a href = "https://brasilescola.uol.com.br/geografia/europa.htm"> Fonte: Brasil Escola Uol</a>
 
-    </ul>
-    <img src = "Img/Regiões_Europa.jpg" alt = "Regiões da Europa">
-    <br>
-    <a href = "https://geographia.com.br/regionalizacao-do-continente-europeu/"> Fonte: Portal Geografia</a>
+        </div>
+    </div>
+        <a href = "Europa.html"> Voltar ao topo</a>
 
-    <h3>População</h3>
-    <p>Entre os seis continentes do mundo, a Europa é quarto no ranking de população, com mais de 740 milhões de habitantes.
-    </p>
-    <p>O continente é considerado o mais atrativo para migrantes vindos de todas as regiões do mundo, e, segundo relatório da Organização Internacional para Migrações, cerca de 70 milhões de pessoas na Europa vieram de outros locais.
-    </p>
-    <p>O país mais populoso da Europa é a Rússia, com um pouco mais de 144 milhões de habitantes, e o menos populoso é o Vaticano, com cerca de 800 habitantes.
-    </p>
-
-    <img src = "Img/PopulacaoEuropa.jpg" alt = "Populacao da Europa">
-    <br>
-    <a href = "https://brasilescola.uol.com.br/geografia/europa.htm"> Fonte: Brasil Escola Uol</a>
 </body>
 </html>
