@@ -3,10 +3,29 @@
 
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela do Brasileirão</title>
+    <style>
+        .check {
+          color: green;
+          font-weight: bold;
+        }
+        .traco {
+          color: gray;
+          font-weight: bold;
+        }
+        .xis {
+          color: red;
+          font-weight: bold;
+        }
+        td span {
+          margin-right: 4px;
+        }
+      </style>
 </head>
+
 
 <body>
         <table width="46%" border = "1" >
@@ -289,5 +308,38 @@
                 </tr>
             </tbody>
         </table>
+        <script>
+            const linhas = document.querySelectorAll("table tbody tr");
+        
+            linhas.forEach(linha => {
+              const celulas = linha.querySelectorAll("td");
+              const ultimaCelula = celulas[10];
+        
+              if (ultimaCelula) {
+                const conteudo = ultimaCelula.textContent.trim().split(" ");
+        
+                ultimaCelula.innerHTML = "";
+        
+                conteudo.forEach(simbolo => {
+                  const span = document.createElement("span");
+        
+                  if (simbolo === "✓") {
+                    span.className = "check";
+                    span.textContent = "✓";
+                  } else if (simbolo === "-") {
+                    span.className = "traco";
+                    span.textContent = "-";
+                  } else if (simbolo.toLowerCase() === "x") {
+                    span.className = "xis";
+                    span.textContent = "x";
+                  } else {
+                    span.textContent = simbolo;
+                  }
+        
+                  ultimaCelula.appendChild(span);
+                });
+              }
+            });
+          </script>
 </body>
 </html>
