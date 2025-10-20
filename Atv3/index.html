@@ -13,65 +13,72 @@
         <fieldset>
             <legend>Dados Pessoais</legend>
 
-            <label></label>
-            <input>
+            <label for = "nome">Nome Completo:</label><br>
+            <input type = "text"  id = "nome" name = "nome" required><br><br>
 
-            <label></label>
-            <input>
+            <label for = "data">Data de Nascimento:</label><br>
+            <input type = "date" id = "data" name = "data" required><br><br>
             
-            <label></label>
-            <input>
+            <label for = "genero">Gênero:</label><br>
+            <input type = "radio" id = "genero" name = "Masculino" required>Masculino
+            <input type = "radio" id = "genero" name = "Feminino" required>Feminino
+            <input type = "radio" id = "genero" name = "Outro..." required>Outro... <br><br>
 
-            <label></label>
-            <input>
+            <label for = "cpf">CPF:</label><br>
+            <input type = "number" id = "cpf" name = "cpf" required><br><br>
 
-            <label></label>
-            <input>
+            <label for = "email">Email:</label><br>
+            <input type = "email" id = "email" name="email" required><br><br>
         </fieldset>
         
-        
+        <br>
         
         <fieldset>
             <legend>Histórico de Saúde</legend>
 
-            <label></label>
-            <input>
+            <label for = "doença">Possui alguma doença crônica?</label><br>
+            <input type = "radio" id = "doença" name = "sim" required>Sim<br>
+            <input type = "radio" id = "doença" name = "nao" required>Não<br><br>
             
-            <label></label>
-            <input>
+            <label for = "medicamento">Quais medicamentos você utiliza regularmente?</label><br>
+            <textarea id="medicamento" name="medicamento" rows="5" cols="40" placeholder="Digite aqui..." required></textarea><br><br>
             
-            <label></label>
-            <input>
+            <label for = "Fuma">Você fuma?</label><br>
+            <input type = "checkbox" id = "Fuma" name = "fuma" required>Sim<br><br>
     
-            <label></label>
-            <input>
+            <label for = "altura">Altura(em cm):</label><br>
+            <input type = "number" id = "altura" name = "altura" required><br><br>
             
-            <label></label>
-            <input>
+            <label for = "peso">Peso(em kg):</label><br>
+            <input type = "number" id = "peso" name = "peso" required><br><br>
             
             
         </fieldset>
         
-        
+        <br>
         
         <fieldset>
             <legend>Detalhes da Consulta</legend>
             
-            <label></label>
-            <input>
+            <label for = "motivo">Qual é o principal motivo da sua consulta? </label><br>
+            <input type = "text" id ="motivo" name = "motivo" required><br><br>
     
-            <label></label>
-            <input>
-    
-            <label></label>
-            <input>
-    
-            <label></label>
-            <input>
-    
-            <label></label>
-            <input>
+            <label for = "exercicio">Com que frequência você pratica exercícios físicos?</label><br>
+            <select id = "exercicio" name = "exercicio" required>
+                <option value = "Diariamente">Diariamente</option>
+                <option value = "Semanalmente">Semanalmente</option>
+                <option value = "Raramente">Raramente</option>
+                <option value = "Nunca">Nunca</option><br><br>
             
+            <br>
+            <label for = "dateea">Data da Última Consulta (aproximada):</label><br>
+            <input type = "date" id = "dateea" name = "dateea"><br><br>
+    
+            <label for = "tipo">Prefere ser contatado por:</label><br>
+            <input type = "radio" id = "tipo" name = "tipo">Telefone<br><br>
+            <input type = "radio" id = "tipo" name = "tipo">Email<br><br>
+
+            <button type = "submit"> Enviar</button>
 
         </fieldset>
 
